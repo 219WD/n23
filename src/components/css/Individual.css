@@ -1,0 +1,184 @@
+.individual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(to bottom, #292929, #898989),
+        url("https://res.cloudinary.com/dtxdv136u/image/upload/v1733412949/Texturelabs_Paper_205M_eyfra5.webp");
+    background-size: cover;
+    /* Asegura que la textura cubra todo el fondo */
+    background-position: center;
+    /* Centra la textura */
+    background-blend-mode: overlay;
+    /* Mezcla las capas */
+    width: 100%;
+    height: 100vh;
+}
+
+.txt {
+    text-align: left;
+    padding: 2rem;
+}
+
+.txt h1 {
+    font-family: "DM Sans", serif;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    width: 40vw;
+    color: #FF6A00;
+}
+
+.txt p {
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 1rem 0;
+    color: #f0f0f0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.btn-primary-individual {
+    background: #ff6a00;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.btn-secondary-individual {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    background: #f0f0f0;
+    color: #333;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.individual-img {
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: rgba(116, 116, 116, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50vw;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    margin: 2rem 0;
+    width: auto;
+    /* Se ajusta según el contenido */
+    max-width: 100%;
+    /* No excede el ancho total */
+    gap: 1rem;
+    /* Espaciado entre íconos */
+}
+
+.icon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 6rem;
+}
+
+.icon-img img {
+    width: 3rem;
+    /* Ajusta el tamaño del ícono */
+    height: 3rem;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.icon h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+
+@media (max-width: 900px) {
+    .individual {
+        flex-direction: column-reverse;
+        height: 100vh;
+        padding: 1rem; /* Reduce space around content */
+    }
+
+    .txt {
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .txt h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        width: 100%;
+        margin-bottom: 1rem; /* Reduce space between the title and paragraph */
+    }
+
+    .txt p {
+        text-align: left;
+        font-size: 1rem;
+        width: 100%;
+        margin: 0.5rem 0; /* Reduce margin between paragraph elements */
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 1rem; /* Max separation between buttons */
+        align-items: stretch; /* Make buttons stretch to full width */
+    }
+
+    .img-container {
+        width: 100%;
+        height: auto; /* Allow image container to adjust based on content */
+        margin-bottom: 1rem;
+    }
+
+    .individual-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .icons {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .icon {
+        width: 4rem;
+    }
+
+    .icon-img img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

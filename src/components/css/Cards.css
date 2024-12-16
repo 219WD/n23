@@ -1,0 +1,192 @@
+/* Estilo para el contenedor de la historia */
+.history {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    padding: 2rem;
+    background: url("https://nike-ecommerce-ten.vercel.app/assets/bees-g.png"), #292929;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.txt-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+
+.txt-history h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    width: 50vw;
+    color: #f0f0f0;
+}
+
+.txt-history p {
+    font-family: "Goldman", sans-serif;
+    font-size: 1.2rem;
+    width: 50vw;
+    color: #f0f0f0;
+    margin-top: 1rem;
+}
+
+.txt-history h5 {
+    font-family: "Goldman", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #acacac;
+}
+
+.txt-history a {
+    text-decoration: none;
+}
+
+.txt-history button {
+    margin-top: 2rem;
+    font-family: "Goldman", sans-serif;
+    background: none;
+    border: none;
+    /* Elimina todos los bordes */
+    border-bottom: 3px solid #f0f0f0;
+    /* Solo mantiene el borde inferior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 1rem;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    width: 45%;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Estilo para el círculo del botón */
+.txt-history .button__circle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: none;
+    color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+    /* Transición suave para el fondo */
+}
+
+/* Estilo para los iconos dentro del círculo */
+.txt-history .button__icon {
+    transition: transform 0.3s ease;
+    /* Transición suave */
+}
+
+/* Efecto hover en los iconos */
+.txt-history button:hover .button__icon {
+    transform: scale(1.1);
+    /* Sutil aumento de tamaño del icono */
+}
+
+/* Estilo para el segundo icono (con la clase button__icon--copy) */
+.txt-history .button__icon--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+    transition: transform 0.3s ease;
+    /* Transición suave */
+}
+
+/* Efecto hover en el segundo icono */
+.txt-history button:hover .button__icon--copy {
+    transform: translate(0%, 0%);
+    /* Mover el icono al centro en el hover */
+}
+
+.img-history {
+    width: 30vw;
+    height: 50vh;
+    background-image: url("https://acdn.mitiendanube.com/stores/001/612/841/products/storie-baguette-gris-alexandro-2-78fdb18a860396ad9417125843943753-1024-1024.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img-history .shapeHistory {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    bottom: -5rem;
+    right: -5rem;
+}
+
+.img-history .shapeHistory:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .history {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 4rem 0;
+    }
+
+
+    .txt-history h2 {
+        width: 90vw;
+        font-size: 3rem;
+    }
+
+    .txt-history p {
+        font-family: "Goldman", sans-serif;
+        font-size: 1.2rem;
+        width: 90vw;
+        color: #f0f0f0;
+        margin-top: 1rem;
+    }
+
+    .txt-history h5 {
+        font-family: "Goldman", sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #acacac;
+    }
+
+    .txt-history button {
+        margin-top: 2rem;
+        font-family: "Goldman", sans-serif;
+        background: none;
+        border: none;
+        /* Elimina todos los bordes */
+        border-bottom: 3px solid #f0f0f0;
+        /* Solo mantiene el borde inferior */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 1rem;
+        font-size: 1.2rem;
+        color: #f0f0f0;
+        width: 100%;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .img-history {
+        width: 70vw;
+    }
+
+    .img-history .shapeHistory {
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        bottom: -3rem;
+        right: -3rem;
+    }
+}

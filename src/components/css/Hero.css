@@ -1,0 +1,255 @@
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(244, 235, 220, 0.7)),
+        url("/src/assets/bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    margin: 0;
+}
+
+.txt {
+    text-align: left;
+    padding: 2rem;
+}
+
+.txt h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    width: 40vw;
+    color: #f0f0f0;
+}
+
+.txt h5 {
+    font-family: "Goldman", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #acacac;
+}
+
+.txt p {
+    font-family: "Goldman", sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 1rem 0;
+    color: #f0f0f0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background: #f0f0f0;
+    color: #333;
+    border: 3px solid #333;
+    outline: 3px solid #f0f0f0;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: "Goldman", sans-serif;
+    transition: all 0.5s ease;
+}
+
+.btn-primary:hover {
+    background: #333;
+    color: #f0f0f0;
+    border: 3px solid #f0f0f0;
+    outline: 3px solid #333;
+    transform: scale(1.05);
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 50vw;
+    height: 100vh;
+}
+
+.large,
+.medium {
+    width: 30vw;
+    background: #000;
+    margin-top: 2rem;
+    transition: transform 0.5s ease, filter 0.5s ease, background 0.5s ease;
+}
+
+.large {
+    height: 40vw;
+    background-image: url("https://acdn.mitiendanube.com/stores/001/612/841/products/storie-micro-puesta-31-a57296ea3b29304fc916681178994679-1024-1024.webp");
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.medium {
+    height: 30vw;
+    background-image: url("https://acdn.mitiendanube.com/stores/001/612/841/products/storie-micro-puesta-21-7d8c4f4e1f46348d7a16681178997068-1024-1024.webp");
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.large:hover {
+    filter: saturate(20%);
+    /* Menos saturación para una transición más suave */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%), url("https://acdn.mitiendanube.com/stores/001/612/841/products/storie-micro-puesta-31-a57296ea3b29304fc916681178994679-1024-1024.webp");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.01);
+    /* Suaviza el tamaño al hacer hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Agrega una sombra suave */
+}
+
+.medium:hover {
+    filter: saturate(20%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%), url("https://acdn.mitiendanube.com/stores/001/612/841/products/storie-micro-puesta-21-7d8c4f4e1f46348d7a16681178997068-1024-1024.webp");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* From Uiverse.io by Creatlydev */
+.button {
+    cursor: pointer;
+    border: none;
+    background: #7808d0;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5rem;
+    right: 3rem;
+    display: grid;
+    place-content: center;
+    transition:
+        background 300ms,
+        transform 200ms;
+    font-weight: 600;
+}
+
+.button__text {
+    position: absolute;
+    inset: 0;
+    animation: text-rotation 8s linear infinite;
+
+    >span {
+        position: absolute;
+        transform: rotate(calc(19deg * var(--index)));
+        inset: 7px;
+    }
+}
+
+.button__circle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: #fff;
+    color: #7808d0;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__icon--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.button:hover {
+    background: #000;
+    transform: scale(1.05);
+}
+
+.button:hover .button__icon {
+    color: #000;
+}
+
+.button:hover .button__icon:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+}
+
+@keyframes text-rotation {
+    to {
+        rotate: 360deg;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .txt {
+        text-align: left;
+        padding: 2rem;
+
+    }
+
+    .txt h1 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+        width: 100%;
+    }
+
+    .txt p {
+        text-align: left;
+        font-size: 1.2rem;
+        width: 100%;
+        margin: 1rem 0;
+        color: #f0f0f0;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .img-container {
+        width: 100vw;
+        padding: 2rem;
+    }
+
+    .large,
+    .medium {
+        width: 40vw;
+        height: 100%;
+    }
+
+}

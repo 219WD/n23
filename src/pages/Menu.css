@@ -1,0 +1,175 @@
+.container.coleccion {
+    background: #292929;
+}
+
+.coleccion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.colection {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.slider {
+    flex: 1;
+    /* La imagen y slider ocupan el 50% */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img {
+    width: 35vw;
+    height: 70vh;
+    background-image: url("https://acdn.mitiendanube.com/stores/001/612/841/products/storie-micro-puesta-21-7d8c4f4e1f46348d7a16681178997068-1024-1024.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #f0f0f0;
+}
+
+.slide {
+    flex: 0 0 15%;
+    /* Cada slide ocupa 1/4 del tamaño */
+}
+
+.slide img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.description {
+    flex: 1;
+    /* La sección de texto ocupa el otro 50% */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.description h2 {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    font-family: "Zen Dots", sans-serif;
+}
+
+.description hr {
+    margin: 0;
+    /* Elimina el margen de los hr */
+}
+
+.pricetag,
+.buttons,
+.descrip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+    /* Elimina separación entre estos elementos */
+    margin: 0;
+    /* Sin margen adicional */
+    padding: 0;
+}
+
+.pricetag h4,
+.pricetag h5 {
+    margin: 0;
+    /* Sin margen entre títulos */
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    font-family: "Goldman", sans-serif;
+}
+
+.buttons {
+    gap: 0;
+    /* Sin separación */
+}
+
+.buttons .btn-descrix {
+    width: 100%;
+    background: #f0f0f0;
+    color: #333;
+    border: 3px solid #333;
+    outline: 3px solid #f0f0f0;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: "Goldman", sans-serif;
+    transition: all 0.5s ease;
+}
+
+.buttons .btn-descrix:hover {
+    background: #333;
+    color: #f0f0f0;
+    border: 3px solid #f0f0f0;
+    outline: 3px solid #333;
+}
+
+.descrip {
+    flex-direction: row;
+    gap: 0;
+    /* Elimina el espacio entre los elementos */
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    font-family: "Goldman", sans-serif;
+    line-height: 1;
+    /* Menor espaciado entre líneas */
+}
+
+.descrip p {
+    width: 50%;
+}
+
+.dropdown {
+    height: 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0;
+    /* Sin margen */
+    padding: 0;
+    /* Compacto */
+}
+
+.slide.active img {
+    border: 3px solid #7808d0;
+    /* Borde morado */
+}
+
+@media (max-width: 900px) {
+    .colection {
+        flex-direction: column;
+    }
+}
