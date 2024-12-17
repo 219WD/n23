@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     // Revisa si ya se mostró el preload previamente
     const preloadShown = localStorage.getItem('preloadShown');
-    const preloadDuration = preloadShown ? 2000 : 12000; // 2 segundos si ya se mostró, 12 segundos si no
+    const preloadDuration = preloadShown ? 2000 : 4000; // 2 segundos si ya se mostró, 12 segundos si no
 
     // Establece un timeout para ocultar el preload después del tiempo correspondiente
     const timeout = setTimeout(() => {
@@ -29,16 +29,16 @@ function App() {
     <BrowserRouter>
       <Helmet>
         <title>N23 - Bags de diseño | Compra facil en la tienda</title>
-        <link rel="icon" type="image/svg+xml" href="/src/assets/Logo.svg" />
+        <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
         <meta
           name="description"
-          content="219Food es tu servicio de menús online para pedir comida de manera rápida y sencilla a través de nuestra página."
+          content="N23 es tu servicio de menús online para pedir comida de manera rápida y sencilla a través de nuestra página."
         />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "219Food",
+            "name": "N23",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Dirección de ejemplo 123",
@@ -49,8 +49,8 @@ function App() {
             },
             "telephone": "+541123456789",
             "description":
-              "219Food ofrece menús online para que puedas pedir comida de forma fácil y rápida. Descubre nuestra amplia variedad de platos y haz tu pedido ahora.",
-            "url": "https://219food.com/",
+              "N23 ofrece menús online para que puedas pedir comida de forma fácil y rápida. Descubre nuestra amplia variedad de platos y haz tu pedido ahora.",
+            "url": "https://n23design.vercel.app/",
           })}
         </script>
       </Helmet>
