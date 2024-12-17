@@ -57,7 +57,7 @@ const ShoppingCart = ({ cart, setCart, removeFromCart, updateQuantity }) => {
       return;
     }
 
-    const whatsappNumber = '3816671884';
+    const whatsappNumber = '3813505368';
     const message = generateWhatsAppMessage();
     const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
     window.location.href = whatsappURL;
@@ -67,7 +67,7 @@ const ShoppingCart = ({ cart, setCart, removeFromCart, updateQuantity }) => {
   };
 
   const handleSendReceipt = () => {
-    const whatsappNumber = '3816671884';
+    const whatsappNumber = '3813505368';
     const message = `¡Hola! Acabo de realizar el pago para el pedido que envié anteriormente. Pronto enviaré el comprobante.\n\n${generateWhatsAppMessage()}`;
     const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
     window.location.href = whatsappURL;
