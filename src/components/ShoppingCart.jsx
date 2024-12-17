@@ -33,7 +33,7 @@ const ShoppingCart = ({ cart, setCart, removeFromCart, updateQuantity }) => {
     let message = '¡Hola! Quisiera realizar el siguiente pedido:\n\n';
     cart.forEach((item) => {
       const price = parseFloat(item.price);
-      message += `🍔 ${item.title} (x${item.quantity}) - $${price.toFixed(2)} c/u\n`;
+      message += `👜 ${item.title} (x${item.quantity}) - $${price.toFixed(2)} c/u\n`;
     });
     message += `\nTotal: $${total.toFixed(2)}\n\n`;
     message += `Información del cliente:\n`;
