@@ -102,7 +102,7 @@ const ShoppingCart = ({ cart, setCart, removeFromCart, updateQuantity }) => {
     }));
 
     try {
-      const response = await fetch("https://two19foodpremiumback.onrender.com/Mercado_Pago", {
+      const response = await fetch("https://n23back.onrender.com/Mercado_Pago", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
