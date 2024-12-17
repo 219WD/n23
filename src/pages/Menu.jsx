@@ -83,7 +83,8 @@ const Menu = () => {
 
   // Información completa del producto
   const product = {
-    id: "puffer-black33",
+    id: 33,
+    title: "puffer-black33",
     name: "Mini Bag Puffer Black33",
     price: 15000,
     description:
